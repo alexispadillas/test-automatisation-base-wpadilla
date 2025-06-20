@@ -1,0 +1,6 @@
+{
+  "name": "#(name)",
+  "alterego": "#(alterego)",
+  "description": "#(description)",
+  "powers": ["Armor", "Flight"]
+}
