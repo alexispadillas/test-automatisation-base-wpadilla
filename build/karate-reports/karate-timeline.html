@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"Test worker","id":1}];
+var items = [{"id":1,"group":1,"content":"karate-test[1:8]","start":1750436916491,"end":1750436918881,"title":"karate-test[1:8] 11:28:36.491-11:28:38.881 Verifica que se consulten todos los personajes"},{"id":2,"group":1,"content":"karate-test[2.1:21]","start":1750436919034,"end":1750436920386,"title":"karate-test[2.1:21] 11:28:39.034-11:28:40.386 Verifica que se consulten el personaje por id"},{"id":3,"group":1,"content":"karate-test[2.2:21]","start":1750436920397,"end":1750436921628,"title":"karate-test[2.2:21] 11:28:40.397-11:28:41.628 Verifica que se consulten el personaje por id"},{"id":4,"group":1,"content":"karate-test[2.3:21]","start":1750436921644,"end":1750436922873,"title":"karate-test[2.3:21] 11:28:41.644-11:28:42.873 Verifica que se consulten el personaje por id"},{"id":5,"group":1,"content":"karate-test[3.1:31]","start":1750436922933,"end":1750436924177,"title":"karate-test[3.1:31] 11:28:42.933-11:28:44.177 Verifica que NO se consulten el personaje por id que no existe"},{"id":6,"group":1,"content":"karate-test[3.2:31]","start":1750436924200,"end":1750436925434,"title":"karate-test[3.2:31] 11:28:44.200-11:28:45.434 Verifica que NO se consulten el personaje por id que no existe"},{"id":7,"group":1,"content":"karate-test[3.3:31]","start":1750436925470,"end":1750436926701,"title":"karate-test[3.3:31] 11:28:45.470-11:28:46.701 Verifica que NO se consulten el personaje por id que no existe"},{"id":8,"group":1,"content":"karate-test[4.1:43]","start":1750436926747,"end":1750436928058,"title":"karate-test[4.1:43] 11:28:46.747-11:28:48.058 Verifica que se cree un personaje exitosamente"},{"id":9,"group":1,"content":"karate-test[4.2:43]","start":1750436928069,"end":1750436929304,"title":"karate-test[4.2:43] 11:28:48.069-11:28:49.304 Verifica que se cree un personaje exitosamente"},{"id":10,"group":1,"content":"karate-test[4.3:43]","start":1750436929322,"end":1750436930552,"title":"karate-test[4.3:43] 11:28:49.322-11:28:50.552 Verifica que se cree un personaje exitosamente"},{"id":11,"group":1,"content":"karate-test[5.1:56]","start":1750436930584,"end":1750436931823,"title":"karate-test[5.1:56] 11:28:50.584-11:28:51.823 Verifica que no se cree un personaje por nombre duplicado"},{"id":12,"group":1,"content":"karate-test[5.2:56]","start":1750436931840,"end":1750436933077,"title":"karate-test[5.2:56] 11:28:51.840-11:28:53.077 Verifica que no se cree un personaje por nombre duplicado"},{"id":13,"group":1,"content":"karate-test[5.3:56]","start":1750436933089,"end":1750436934324,"title":"karate-test[5.3:56] 11:28:53.089-11:28:54.324 Verifica que no se cree un personaje por nombre duplicado"},{"id":14,"group":1,"content":"karate-test[6:59]","start":1750436934341,"end":1750436935582,"title":"karate-test[6:59] 11:28:54.341-11:28:55.582 Verifica que no se cree un personaje por falta de campos"},{"id":15,"group":1,"content":"karate-test[7.1:81]","start":1750436935611,"end":1750436936844,"title":"karate-test[7.1:81] 11:28:55.611-11:28:56.844 Verifica que se actualice un personaje dado un id"},{"id":16,"group":1,"content":"karate-test[7.2:81]","start":1750436936862,"end":1750436938091,"title":"karate-test[7.2:81] 11:28:56.862-11:28:58.091 Verifica que se actualice un personaje dado un id"},{"id":17,"group":1,"content":"karate-test[7.3:81]","start":1750436938104,"end":1750436939330,"title":"karate-test[7.3:81] 11:28:58.104-11:28:59.330 Verifica que se actualice un personaje dado un id"},{"id":18,"group":1,"content":"karate-test[8.1:94]","start":1750436939346,"end":1750436940568,"title":"karate-test[8.1:94] 11:28:59.346-11:29:00.568 Verifica que NO se consulten el personaje por id que no existe"},{"id":19,"group":1,"content":"karate-test[8.2:94]","start":1750436940580,"end":1750436941813,"title":"karate-test[8.2:94] 11:29:00.580-11:29:01.813 Verifica que NO se consulten el personaje por id que no existe"},{"id":20,"group":1,"content":"karate-test[8.3:94]","start":1750436941829,"end":1750436943059,"title":"karate-test[8.3:94] 11:29:01.829-11:29:03.059 Verifica que NO se consulten el personaje por id que no existe"},{"id":21,"group":1,"content":"karate-test[9.1:102]","start":1750436943075,"end":1750436944299,"title":"karate-test[9.1:102] 11:29:03.075-11:29:04.299 Verifica que se elimine de manera existosa un personaje"},{"id":22,"group":1,"content":"karate-test[9.2:102]","start":1750436944308,"end":1750436945540,"title":"karate-test[9.2:102] 11:29:04.308-11:29:05.540 Verifica que se elimine de manera existosa un personaje"},{"id":23,"group":1,"content":"karate-test[9.3:102]","start":1750436945558,"end":1750436946805,"title":"karate-test[9.3:102] 11:29:05.558-11:29:06.805 Verifica que se elimine de manera existosa un personaje"},{"id":24,"group":1,"content":"karate-test[10.1:112]","start":1750436946833,"end":1750436948060,"title":"karate-test[10.1:112] 11:29:06.833-11:29:08.060 Verifica que NO se elimine un personaje por id que no existe"},{"id":25,"group":1,"content":"karate-test[10.2:112]","start":1750436948069,"end":1750436949483,"title":"karate-test[10.2:112] 11:29:08.069-11:29:09.483 Verifica que NO se elimine un personaje por id que no existe"},{"id":26,"group":1,"content":"karate-test[10.3:112]","start":1750436949495,"end":1750436950715,"title":"karate-test[10.3:112] 11:29:09.495-11:29:10.715 Verifica que NO se elimine un personaje por id que no existe"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Gradle
 .gradle/
-build/
+# Gradle Wrapper
 !gradle/wrapper/gradle-wrapper.jar
 
 # Java
@@ -13,7 +13,6 @@ build/
 .DS_Store
 
 # Karate
-karate-reports/
 
 # Logs
 *.log
